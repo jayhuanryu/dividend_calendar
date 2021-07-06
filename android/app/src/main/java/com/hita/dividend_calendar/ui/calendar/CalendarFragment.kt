@@ -22,10 +22,19 @@ class CalendarFragment : Fragment() {
         calendarViewModel =
                 ViewModelProvider(this).get(CalendarViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_calendar, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        calendarViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+
+        initView()
+        addObservers()
+
         return root
+    }
+
+
+    fun initView() {
+
+    }
+
+    fun addObservers() {
+
     }
 }

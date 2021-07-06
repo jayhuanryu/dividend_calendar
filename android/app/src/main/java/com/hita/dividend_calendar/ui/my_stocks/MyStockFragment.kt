@@ -22,10 +22,6 @@ class MyStockFragment : Fragment() {
         myStockViewModel =
                 ViewModelProvider(this).get(MyStockViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_my_stocks, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
-        myStockViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
         return root
     }
 }
