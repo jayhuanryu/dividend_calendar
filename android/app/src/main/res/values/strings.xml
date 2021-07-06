@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dividend Calendar</string>
+    <string name="title_calendar">Calendar</string>
+    <string name="title_stock_info">Stock Info</string>
+    <string name="title_my_stocks">My Stocks</string>
+    <string name="title_settings">Settings</string>
+</resources>
